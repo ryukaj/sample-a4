@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* アカウント作成
+********************************************************************/
+.container-btn-signup a {
+  display: inline-block;
+  width: calc(100% - 2em);
+  padding: 1em 0;
+  margin: 0.5em 1em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+/* 登録・運用ルール
+********************************************************************/
+.container-rule-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.container-rule-cards > .container-rule-card {
+  width: calc(33% - 1em);
+  margin: 0.5em;
+}
+
+.container-rule-card > h3 {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  margin: 0;
+}
+
+.container-rule-card > div {
+  height: 200px;
+  border: 1px solid black;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}

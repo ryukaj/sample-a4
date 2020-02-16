@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* カルーセル
+********************************************************************/
+#container-carousel-policy {
+  height: 450px;
+}
+
+#container-carousel-policy .swiper-slide {
+  cursor: pointer;
+}
+
+/* リンク
+********************************************************************/
+#container-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+#container-links a {
+  display: inline-block;
+  padding: 2em 0;
+  width: 30%;
+  text-align: center;
+  border-radius: 0.5em;
+
+  /* wireframe */
+  border: 1px solid black;
+}

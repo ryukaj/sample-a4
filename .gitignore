@@ -1,6 +1,5 @@
 venv
 *.pyc
-staticfiles
 .env
 *.sqlite3
 # ディレクトリ配下（のすべてのパスを）除外する

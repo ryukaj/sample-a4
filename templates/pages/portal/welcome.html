@@ -1,0 +1,145 @@
+{% extends "abstracts/default.html" %}
+
+{% comment %}
+{% endcomment %}
+
+{% load static %}
+
+{% block page_css %}
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link href="{% static 'css/pages/portal/welcome/page.css' %}" rel="stylesheet" type="text/css" >
+<link href="{% static 'css/pages/portal/welcome/page.tablet.css' %}" rel="stylesheet" type="text/css" media="screen and (min-width: 768px)">
+<link href="{% static 'css/pages/portal/welcome/page.pc.css' %}" rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)">
+{% endblock %}
+
+{% block page_js %}
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script> 
+<script type="text/javascript" src="{% static 'js/pages/portal/welcome/conductor.js' %}"></script>
+{% endblock %}
+
+{% block page_content %}
+<div id='container-content-welcome'>
+  <h1>Hack World By A4.</h1>
+  <!-- to: container-carousel-policy -->
+  <div id="container-carousel-policy" class="swiper-container page-content">
+    <div class='swiper-wrapper'>
+      <section id="container-policy-concept" class="swiper-slide">
+        <h2>４つのコンセプトによるアドバイス</h2>
+        <div>
+          ワンフレーズとキャッチーなヒーロー画像
+        </div>
+      </section>
+      <section id="container-policy-commitment" class="swiper-slide">
+        <h2>４つのこだわり</h2>
+        <div>
+          ワンフレーズとキャッチーなヒーロー画像
+        </div>
+      </section>
+      <section id="container-policy-rules" class="swiper-slide">
+        <h2>登録・運用ルール</h2>
+        <div>
+          ワンフレーズとキャッチーなヒーロー画像
+        </div>
+      </section>
+      <section id="container-policy-thought" class="swiper-slide">
+        <h2>A4への想い</h2>
+        <div>
+          ワンフレーズとキャッチーなヒーロー画像
+        </div>
+      </section>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- from: container-carousel-policy -->
+  <!-- to: container-links -->
+  <div id="container-links" class='page-content'>
+    <a>My Place</a>
+    <a>New Entry</a>
+    <a>Ranking</a>
+  </div>
+  <!-- to: container-links -->
+  <!-- from: container-latest_news -->
+  <section id='container-latest_news' class='page-content'>
+    <h2>新着ニュース</h2>
+    <div id="wrapper-latest_news">
+      {% include 'organisms/listtable.html' %}
+    </div>
+  </section>
+  <!-- from: container-latest_news -->
+  <!-- from: container-new_face -->
+  <section id='container-new_face' class='page-content'>
+    <h2>New Face</h2>
+    <div id="wrapper-new_face">
+      {% include 'organisms/listtable.html' %}
+    </div>
+  </section>
+  <!-- from: container-new_face -->
+  <!-- from: container-aggregate -->
+  <section id='container-aggregate' class='page-content'>
+    <h2>登録エンジニア人数</h2>
+  </section>
+  <!-- from: container-aggregate -->
+  <!-- from: container-rankings -->
+  <section id='container-a4_rankings' class='page-content'>
+    <h2>Ranking</h2>
+    <div class="wrapper-page-contents-items">
+      <section class='page-contents-item'>
+        <h3>Best Advice</h3>
+        <div id="wrapper-best_advice">
+          {% include 'organisms/listtable.html' %}
+        </div>    
+      </section>
+      <section class='page-contents-item'>
+        <h3>Received Advice Number</h3>
+        <div id="wrapper-received_advice_number">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+      <section class='page-contents-item'>
+        <h3>Eeyan Advice Point</h3>
+        <div id="wrapper-eeyan_advice_point">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+      <section class='page-contents-item'>
+        <h3>Recommend Company</h3>
+        <div id="wrapper-recommend_company">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- from: container-rankings -->
+  <section id='container-a4_contents' class='page-content'>
+    <h2>CONTENTS</h2>
+    <div class="wrapper-page-contents-items">
+      <section class='page-contents-item'>
+        <h3>THis Month'S SLOGAN</h3>
+        <div id="wrapper-month_slogan">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+      <section class='page-contents-item'>
+        <h3>Engineer ARUARU</h3>
+        <div id="wrapper-engineer_aruaru">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+      <section class='page-contents-item'>
+        <h3>Engineer's EQUATION</h3>
+        <div id="wrapper-engineer_equation">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+      <section class='page-contents-item'>
+        <h3>Engineer's GOODS</h3>
+        <div id="wrapper-engineer_good">
+          {% include 'organisms/listtable.html' %}
+        </div>
+      </section>
+    </div>
+  </section>
+</div>
+{% endblock %}

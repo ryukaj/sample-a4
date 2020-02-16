@@ -1,0 +1,44 @@
+{% comment %}
+{% endcomment %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>A4 Project | {{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0″>
+    <link href="{% static 'css/abstracts/default/layout.css' %}" rel="stylesheet" type="text/css" >
+    <link href="{% static 'css/abstracts/default/layout.tablet.css' %}" rel="stylesheet" type="text/css" media="screen and (min-width: 768px)">
+    <link href="{% static 'css/abstracts/default/layout.pc.css' %}" rel="stylesheet" type="text/css" media="screen and  (min-width: 1024px)">
+    {% block page_css %}{% endblock %}
+    <script type="text/javascript" src="{% static 'js/pages/orchestra.js' %}"></script>
+    {% block page_js %}{% endblock %}
+  </head>
+  <body>
+    <header>
+      <div class='container-wardrobe'>
+        <nav>
+          <div>
+            LOGO
+          </div>
+          <div id='container-head-menu'>
+            <a class="menu-trigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class='container-wardrobe'>
+        <div id='wrapper-page-content'>
+          {% block page_content %}{% endblock %}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

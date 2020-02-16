@@ -1,0 +1,89 @@
+{% extends "abstracts/default.html" %}
+
+{% comment %}
+{% endcomment %}
+
+{% load static %}
+
+{% block page_css %}
+<link href="{% static 'css/pages/portal/policy/page.css' %}" rel="stylesheet" type="text/css" >
+<link href="{% static 'css/pages/portal/policy/page.tablet.css' %}" rel="stylesheet" type="text/css" media="screen and (min-width: 768px)">
+<link href="{% static 'css/pages/portal/policy/page.pc.css' %}" rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)">
+{% endblock %}
+
+{% block page_js %}
+<script type="text/javascript" src="{% static 'js/pages/portal/policy/conductor.js' %}"></script>
+{% endblock %}
+
+{% block page_content %}
+<div id='container-content-welcome'>
+  <h1>Title: Policy</h1>
+  <div class='container-btn-signup page-content'>
+    <a>アカウント作成ボタン</a>
+  </div>
+  <section class='container-policy-content page-content'>
+    <h2>４つのコンセプトによるアドバイス</h2>
+    <div>
+      説明文
+    </div>
+  </section>
+  <section class='container-policy-content page-content'>
+    <h2>４つのこだわり</h2>
+    <div>
+      説明文
+    </div>
+  </section>
+  <section class='container-policy-content page-content'>
+    <h2>登録・運用ルール</h2>
+    <div id='wrapper-a4_rules'>
+      <div class='container-rule-cards'>
+        <div class='container-rule-card'>
+          <h3>ルール１</h3>
+          <div>ルール１説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール２</h3>
+          <div>ルール２説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール３</h3>
+          <div>ルール３説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール４</h3>
+          <div>ルール４説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール５</h3>
+          <div>ルール５説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール６</h3>
+          <div>ルール６説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール７</h3>
+          <div>ルール７説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール８</h3>
+          <div>ルール８説明文</div>
+        </div>
+        <div class='container-rule-card'>
+          <h3>ルール９</h3>
+          <div>ルール９説明文</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='container-policy-content page-content'>
+    <h2>A4への想い</h2>
+    <div>
+      説明文
+    </div>
+  </section>
+  <div class='container-btn-signup page-content'>
+    <a>アカウント作成ボタン</a>
+  </div>
+</div>
+{% endblock %}
