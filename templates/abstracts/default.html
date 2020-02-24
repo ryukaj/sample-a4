@@ -19,25 +19,12 @@
   <body>
     <header>
       <div class='container-wardrobe'>
-        <nav>
-          <div>
-            LOGO
-          </div>
-          <div id='container-head-menu'>
-            <a class="menu-trigger" href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
-        </nav>
+        {% include 'organisms/header/default.html' %}
       </div>
     </header>
     <main>
-      <div class='container-wardrobe'>
-        <div id='wrapper-page-content'>
-          {% block page_content %}{% endblock %}
-        </div>
+      <div id='wrapper-page-content'>
+        {% block page_content %}{% endblock %}
       </div>
     </main>
   </body>

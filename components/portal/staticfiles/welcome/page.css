@@ -2,19 +2,12 @@
 
 /* カルーセル
 ********************************************************************/
-.l-carousel__cont {
-  position: 100%;
+#container-carousel-policy {
   height: 450px;
 }
 
-.l-carousel__cont__content {
+#container-carousel-policy .swiper-slide {
   cursor: pointer;
-  width: calc(100% - 4.5em);
-  height: calc(100% - 1em);
-  margin: 0.5em auto;
-
-  /* wireframe */
-  border: 1px solid #ccc;
 }
 
 /* リンク

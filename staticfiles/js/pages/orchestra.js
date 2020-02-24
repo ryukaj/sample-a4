@@ -31,8 +31,15 @@ A4Orchestra.prototype.setHeaderEvent = function() {
 }
 
 A4Orchestra.prototype.initializeDefaultHead = function() {
-  document.querySelector('#container-head-menu .menu-trigger').addEventListener('click', (aMenu) => {
-    aMenu.target.classList.toggle('active');
+  //ドロワーメニュー
+  document.querySelector('.l-drawer .l-drawer__trigger').addEventListener('click', (aEvent) => {
+    aEvent.path.some((aPath) => {
+      if (aPath.classList === undefined) return false;
+      if (aPath.classList.contains('l-drawer')) {
+        aPath.classList.toggle('is-open');
+        return true;
+      }
+    });
   });
 };
 
@@ -43,5 +50,5 @@ const A4AbstractorConductor = function() {
 };
 
 A4AbstractorConductor.prototype.initialize = function() {
-  console.log(123);
+
 };
